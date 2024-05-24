@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .regular-btn {
+    @apply grid place-items-center aspect-square text-blue-300 font-bold border rounded-xl border-blue-300 hover:text-blue-400 hover:border-blue-400 active:border-blue-500 active:text-blue-500;
+  }
+
+  .regular-fill-btn {
+    @apply regular-btn bg-gray-900;
+  }
+
+  .regular-tooltip {
+    @apply capitalize whitespace-nowrap bg-gray-700 text-xs font-bold rounded-lg px-2 py-1 text-blue-400;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900;
+}

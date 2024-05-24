@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Education",
+    "icon": "fa-graduation-cap",
+    "info": [
+      {
+        "title": "Bachelor of Science",
+        "list": [
+          {
+            "key": "Major",
+            "value": "Computer Science"
+          },
+          {
+            "key": "Grade",
+            "value": "Very Good (B+)"
+          },
+          {
+            "key": "Department",
+            "value": "Benha University"
+          }
+        ]
+      },
+      {
+        "title": "Internship",
+        "list": [
+          {
+            "key": "Major",
+            "value": "Application Developer"
+          },
+          {
+            "key": "Duration",
+            "value": "120 Hour"
+          },
+          {
+            "key": "Department",
+            "value": "Information Technology Institute (ITI)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Skills",
+    "icon": "ri-tools-fill",
+    "info": [
+      {
+        "title": "Languages",
+        "list": [
+          {
+            "value": [
+              "HTML",
+              "CSS",
+              "SQL"
+            ]
+          },
+          {
+            "value": [
+              "JS",
+              "PHP",
+              "Python",
+              "Matlab"
+            ]
+          },
+          {
+            "value": [
+              "Assembly",
+              "C",
+              "C++",
+              "C#",
+              "Java"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Technologies & Frameworks",
+        "list": [
+          {
+            "value": [
+              "SCSS",
+              "Tailwind",
+              "Typescript",
+              "Vue-JS",
+              "Vue-Router"
+            ]
+          },
+          {
+            "value": [
+              "Laravel",
+              "Livewire",
+              "Intera-JS",
+              "Laravel-Foli"
+            ]
+          },
+          {
+            "value": [
+              "Entity-Framework"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Software Development Skills",
+        "list": [
+          {
+            "value": "Fundamental, OOP, Data Structure, and Algorithms"
+          },
+          {
+            "value": "Networking Basics and Data Communicate"
+          },
+          {
+            "value": "Machine Learning and Data Mining Basics"
+          },
+          {
+            "value": "Discrete Mathematics, Probabilities, and Logic"
+          },
+          {
+            "value": "Cryptography and Steganography Basics"
+          }
+        ]
+      },
+      {
+        "title": "Current Focus",
+        "list": [
+          {
+            "value": "Object Oriented Design"
+          },
+          {
+            "value": "Intera-JS, Laravel Queue, Laravel-11, and Laravel valet"
+          },
+          {
+            "value": "Vue-JS and Nuxt (SSR)"
+          },
+          {
+            "value": "Animations and Transitions"
+          },
+          {
+            "value": "Problem Solving"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Achievements",
+    "icon": "bi-award-fill",
+    "info": [
+      {
+        "title": "Laravel daily challenges",
+        "description": "Complete All Laravel daily challenges."
+      },
+      {
+        "title": "+750 Problem solved in Leetcode",
+        "description": "On top of that, I achieved 9 badges, and Top ~29k in Leetcode."
+      },
+      {
+        "title": "Design Challenge",
+        "description": "+4 Designs challenges from Front-End Mentor"
+      }
+    ]
+  }
+]

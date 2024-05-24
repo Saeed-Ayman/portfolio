@@ -1,0 +1,37 @@
+[
+    {
+        "socialTitle": "facebook",
+        "socialIcon": "fa-facebook-f",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "whatsapp",
+        "socialIcon": "bi-whatsapp",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "github",
+        "socialIcon": "bi-github",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "leetcode",
+        "socialIcon": "co-leetcode",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "linkedin",
+        "socialIcon": "co-linkedin-in",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "mail",
+        "socialIcon": "co-mail-ru",
+        "socialLink": "#"
+    },
+    {
+        "socialTitle": "phone",
+        "socialIcon": "bi-phone",
+        "socialLink": "#"
+    }
+]
