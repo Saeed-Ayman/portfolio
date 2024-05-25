@@ -25,42 +25,58 @@ useFocusBackgroundStore().registerRef(showSocial);
     </TagWithTooltip>
 
     <div class="absolute left-1/2 -bottom-2 -translate-x-1/2 translate-y-full">
-      <transition-group name="drop" tag="ul" class="space-y-2">
+      <ul class="space-y-2">
         <TagWithTooltip
           tag="li"
-          v-show="showSocial"
-          v-for="{ socialTitle, socialIcon, socialLink } in socialLinks"
+          v-for="({ socialTitle, socialIcon, socialLink }, i) in socialLinks"
           :key="socialTitle"
           x-position="right"
           y-position="center"
         >
-          <a :href="socialLink" target="_blank" class="w-8 md:w-10 regular-btn">
-            <v-icon :name="socialIcon" />
-          </a>
-
+          <transition>
+            <a
+              v-if="showSocial"
+              :href="socialLink"
+              target="_blank"
+              class="w-8 md:w-10 regular-btn"
+              :style="{
+                '--enter-transition-duration': `${(i + 1) * 0.15 + 0.1}s`,
+                '--leave-transition-duration': `${
+                  (socialLinks.length - i) * 0.1
+                }s`,
+              }"
+            >
+              <v-icon :name="socialIcon" />
+            </a>
+          </transition>
           <template #tooltip>{{ socialTitle }}</template>
         </TagWithTooltip>
-      </transition-group>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped>
-.drop-enter-active {
-  transition: all 0.5s ease-out;
-  transform: translateX(-100%);
+.v-enter-active,
+.v-leave-to {
+  transform: translateX(-200px);
   opacity: 0;
 }
 
-.drop-enter-to {
-  transition: all 0.5s ease-out;
+.v-enter-to {
+  transition: all var(--enter-transition-duration) ease-in-out;
   transform: translateX(0%);
   opacity: 1;
 }
 
-.drop-leave-active {
-  transition: all 0.4s ease;
-  transform: translateX(-70%);
+.v-leave-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.v-leave-to {
+  transition: all var(--leave-transition-duration) ease-in-out;
+  transform: translateX(-100px);
   opacity: 0;
 }
 </style>

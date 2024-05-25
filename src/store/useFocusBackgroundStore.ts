@@ -28,13 +28,29 @@ export const useFocusBackgroundStore = defineStore("focus-background", () => {
       }
 
       // if (_key.value !== -1) {
-      //   document.body.classList.add("overflow-hidden");
+      //   document.body.style.top = `-${document.documentElement.scrollTop}px`;
+
+      //   document.body.classList.add("fixed", "overflow-y-scroll", "w-full");
 
       //   if (!_visibleInBigScreens[_key.value]) {
-      //     document.body.classList.add("md:overflow-auto");
+      //     document.body.classList.add("md:static", "md:overflow-y-auto");
       //   }
       // } else {
-      //   document.body.classList.remove("overflow-hidden", "md:overflow-auto");
+      //   const scrollTop = -1 * parseInt(document.body.style.top);
+
+      //   document.body.classList.remove(
+      //     "md:static",
+      //     "md:overflow-y-auto",
+
+      //     "overflow-y-scroll",
+      //     "fixed",
+      //     "w-full"
+      //   );
+
+      //   document.documentElement.scrollTo({
+      //     behavior: "instant",
+      //     top: scrollTop,
+      //   });
       // }
     },
     { deep: true }
