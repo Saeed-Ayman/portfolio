@@ -3,18 +3,12 @@ import { ref } from "vue";
 import TagWithTooltip from "../components/TagWithTooltip.vue";
 import { useFocusBackgroundStore } from "../store/useFocusBackgroundStore";
 import NavLink from "../components/NavLink.vue";
+import { useScrollStore } from "../store/useScrollStore";
 
 const showNav = ref();
 useFocusBackgroundStore().registerRef(showNav, false);
 
-const navLinks = [
-  { titleLink: "Home", href: "#app" },
-  { titleLink: "About", href: "#About" },
-  { titleLink: "Resume", href: "#Resume" },
-  { titleLink: "Contact", href: "#Contact" },
-];
-
-const activeLink = ref("Home");
+const scrollStore = useScrollStore();
 </script>
 
 <template>
@@ -41,13 +35,12 @@ const activeLink = ref("Home");
         <ul
           class="flex gap-8 flex-col md:flex-row justify-center items-center font-semibold"
         >
-          <li v-for="{ titleLink, href } in navLinks">
+          <li v-for="link in scrollStore.links">
             <NavLink
-              :href="href"
-              @click="activeLink = titleLink"
-              :active="titleLink == activeLink"
+              @click="() => scrollStore.scrollToSection(link)"
+              :active="scrollStore.isActiveSection(link)"
             >
-              {{ titleLink }}
+              {{ link }}
             </NavLink>
           </li>
         </ul>

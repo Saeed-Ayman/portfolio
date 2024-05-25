@@ -4,6 +4,18 @@ import FocusBackgroundSection from "./ui/FocusBackgroundSection.vue";
 import HeaderSection from "./ui/HeaderSection.vue";
 import LandingSection from "./ui/LandingSection.vue";
 import AboutSection from "./ui/AboutSection.vue";
+
+import { useScrollStore } from "./store/useScrollStore";
+import { onMounted } from "vue";
+
+const scrollStore = useScrollStore();
+
+onMounted(() => {
+  scrollStore.registerRef("home", document.getElementById("app"));
+  scrollStore.registerRef("about", document.getElementById("about"));
+  scrollStore.registerRef("resume", document.getElementById("resume"));
+  scrollStore.registerRef("contact", document.getElementById("contact"));
+});
 </script>
 
 <template>
@@ -11,10 +23,10 @@ import AboutSection from "./ui/AboutSection.vue";
 
   <main>
     <LandingSection />
-    <AboutSection id="About" />
-    <ResumeSection id="Resume" />
+    <AboutSection id="about" />
+    <ResumeSection id="resume" />
 
-    <div id="Contact" class="bg-gray-900 h-screen"></div>
+    <div id="contact" class="bg-gray-900 h-screen"></div>
   </main>
 
   <FocusBackgroundSection />

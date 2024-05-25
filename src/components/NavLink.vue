@@ -3,8 +3,8 @@ defineProps<{ active: boolean }>();
 </script>
 
 <template>
-  <a
-    class="transition-colors duration-400 relative"
+  <button
+    class="transition-colors duration-400 relative capitalize"
     :class="{
       'text-blue-300 hover:text-blue-400': !active,
       'text-blue-500': active,
@@ -17,7 +17,7 @@ defineProps<{ active: boolean }>();
         class="transition-colors duration-400 rounded-sm absolute border-2 w-1/2 border-blue-500"
       />
     </transition>
-  </a>
+  </button>
 </template>
 
 <style scoped>
