@@ -8,7 +8,7 @@ const todosProgramming: string[] = [
 </script>
 
 <template>
-  <div class="bg-gray-900 py-10 grid place-items-center">
+  <div class="bg-gray-900 py-10 grid place-items-center min-h-full">
     <div class="todos">
       <div class="todo-title text-sm sm:text-base xl:text-2xl">
         Programming Life

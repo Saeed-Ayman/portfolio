@@ -21,6 +21,8 @@ import {
   BiAwardFill,
   RiToolsFill,
   BiPhone,
+  BiTriangleFill,
+  BiThreeDots,
 } from "oh-vue-icons/icons";
 
 import "./style.css";
@@ -40,7 +42,9 @@ addIcons(
   FaGraduationCap,
   BiAwardFill,
   RiToolsFill,
-  BiPhone
+  BiPhone,
+  BiTriangleFill,
+  BiThreeDots
 );
 
 const app = createApp(App);
