@@ -23,6 +23,13 @@ import {
   BiPhone,
   BiTriangleFill,
   BiThreeDots,
+  BiX,
+  CoTypescript,
+  CoJson,
+  ViFileTypeVue,
+  ViFileTypeJson,
+  ViFileTypeTypescript,
+  FaRegularFile,
 } from "oh-vue-icons/icons";
 
 import "./style.css";
@@ -44,7 +51,14 @@ addIcons(
   RiToolsFill,
   BiPhone,
   BiTriangleFill,
-  BiThreeDots
+  BiThreeDots,
+  BiX,
+  CoTypescript,
+  CoJson,
+  ViFileTypeVue,
+  ViFileTypeJson,
+  ViFileTypeTypescript,
+  FaRegularFile
 );
 
 const app = createApp(App);
