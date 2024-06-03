@@ -37,7 +37,12 @@ const scrollStore = useScrollStore();
         >
           <li v-for="link in scrollStore.links">
             <NavLink
-              @click="() => scrollStore.scrollToSection(link)"
+              @click="
+                () => {
+                  scrollStore.scrollToSection(link);
+                  showNav = false;
+                }
+              "
               :active="scrollStore.isActiveSection(link)"
             >
               {{ link }}
